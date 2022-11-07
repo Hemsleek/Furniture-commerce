@@ -1,0 +1,16 @@
+.Navbar{
+     
+    @apply flex items-center justify-end gap-x-[9.88rem] text-base pr-[6.25rem] py-[2.25rem];
+}
+.nav-items,
+.nav-icons{
+    @apply flex items-center;
+}
+
+.nav-items{
+    @apply gap-x-[4.68rem]
+    capitalize;
+}
+.nav-icons {
+    @apply gap-x-[2.81rem]
+}

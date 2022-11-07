@@ -1,7 +1,8 @@
 import React from "react";
+import AppRoutes from "./AppRoutes";
 
 const App = () => {
-  return <div>Furniture Commerce</div>;
+  return <AppRoutes />;
 };
 
 export default App;
