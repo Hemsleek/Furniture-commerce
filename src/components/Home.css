@@ -1,3 +1,58 @@
 .Home{
     
 }
+
+.hero{
+    @apply bg-[#FBEBB5] pl-[12.625rem] flex items-center h-[56.25rem] relative; 
+
+}
+.hero-text-wrapper{
+    @apply flex flex-col z-50 max-w-[27.5rem] ;
+}
+.hero-text1{
+    @apply font-medium text-[4rem] leading-[5rem];
+}
+.hero-text-wrapper  span:last-child{
+    @apply text-black text-[1.5rem] font-medium border-2 border-transparent border-b-black pb-[0.8rem] mt-[1.56rem] self-start ;
+}
+.hero img{
+    @apply absolute -top-40 right-0 z-10;
+}
+
+.table-section{
+    @apply flex items-center bg-[#f4f4f4] justify-center gap-[1.875rem] pt-[3.18rem] pb-[3.375rem];
+}
+
+.table{
+    @apply flex flex-col w-[37.81rem] pl-[6.6rem] text-black   ;
+}
+.table img{
+    @apply ml-12  ;
+}
+
+.table span:first-of-type{
+    @apply text-[2.25rem] font-medium  ;
+}
+
+.table .view-more{
+    @apply text-[1.5rem] font-medium block decoration-transparent pb-[0.8rem] border-2  border-transparent border-b-black mt-[1.43rem];
+    width:fit-content;
+}
+
+.asgard{
+    @apply bg-[#FFF9E5] pt-[3.19rem] pl-[1.56rem] pr-[6.06rem] flex items-center gap-[5.9rem] pb-1;
+}
+
+.asgard .asgard-text-wrapper{
+   @apply flex flex-col items-center  ;
+}
+
+.asgard-text-wrapper span:nth-child(2){
+
+    @apply font-bold text-[3rem];
+    
+}
+.asgard-text-wrapper button{
+    @apply mt-[1.4rem] border-[1px] border-black h-[4rem] flex items-center justify-center w-[15.94rem] ;
+}
+

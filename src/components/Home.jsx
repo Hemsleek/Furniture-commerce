@@ -1,27 +1,41 @@
 import React from "react";
-import "./Home.css";
 import PageLayout from "./PageLayout";
+import { defaultTable } from "../data";
+
+import "./Home.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <PageLayout navBg="#FBEBB5">
-      <div className="h-[95vh] bg-red-300">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque libero
-        officiis incidunt cupiditate veritatis natus, hic reiciendis nostrum nam
-        rerum eum! Consequuntur, et incidunt! Assumenda porro consequuntur
-        deleniti nesciunt reiciendis. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Rem sint similique inventore commodi dolor. Rem
-        nesciunt ex quod! Dolore assumenda enim maxime illum totam accusantium
-        ducimus dicta recusandae laboriosam praesentium. Lorem ipsum dolor sit
-        amet consectetur adipisicing elit. Aut quis neque aspernatur.
-        Perspiciatis, tempore a? Dignissimos dolorum, voluptas architecto
-        quisquam obcaecati ullam aliquam? Asperiores, ex. Ipsum possimus
-        voluptatibus nisi dignissimos.lorem Lorem ipsum dolor sit, amet
-        consectetur adipisicing elit. Reprehenderit vel, inventore expedita
-        nulla non placeat accusamus quis fuga perferendis. Magni deleniti
-        incidunt officia repudiandae temporibus veniam reiciendis ullam quidem
-        expedita?
-      </div>
+      <main className=" Home">
+        <section className="hero">
+          <div className="hero-text-wrapper">
+            <span className="hero-text1">Rocket single seater</span>
+            <span>Shop Now</span>
+          </div>
+          <img src="/hero-chair.png" alt="hero-chair" />
+        </section>
+        <section className="table-section">
+          {defaultTable.map((table, tableIndex) => (
+            <div className="table" key={`table${tableIndex}`}>
+              <img src={`/${table.img}.png`} alt="table-img" />
+              <span>{table.name}</span>
+              <Link to="/shop" className="view-more">
+                View More
+              </Link>
+            </div>
+          ))}
+        </section>
+        <section className="asgard">
+          <img src="/asgard-sofa.png" alt="asgard-sofa" />
+          <div className="asgard-text-wrapper">
+            <span className="text-medium24">New Arrivals</span>
+            <span>Asgaard Sofa</span>
+            <button>Order Now</button>
+          </div>
+        </section>
+      </main>
     </PageLayout>
   );
 };
