@@ -4,6 +4,7 @@ import Contact from "./components/Contact";
 
 // components
 import Home from "./components/Home";
+import PageLayout from "./components/PageLayout";
 import Shop from "./components/Shop";
 
 const AppRoutes = () => {
