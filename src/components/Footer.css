@@ -1,0 +1,19 @@
+footer{
+    @apply bg-white pt-[6.125rem] pb-[2.375rem] px-[6.25rem];
+}
+
+footer .copyright{
+    border-top: 1px solid #D9D9D9;
+    @apply pt-[2.19rem] mt-12 text-base;
+    
+}
+footer .footer-content{
+    @apply flex items-center gap-[8.5rem] ;
+}
+footer .details{
+    @apply flex flex-col text-base text-[#9F9F9F] ;
+}
+
+footer .footer-links{
+    @apply max-w-[8.5rem] ;
+}

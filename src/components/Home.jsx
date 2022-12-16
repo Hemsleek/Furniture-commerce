@@ -35,6 +35,11 @@ const Home = () => {
             <button>Order Now</button>
           </div>
         </section>
+        <section className="follow-section">
+          <h3>Our instagram</h3>
+          <span>Follow our store on Instagram</span>
+          <button>follow us</button>
+        </section>
       </main>
     </PageLayout>
   );
