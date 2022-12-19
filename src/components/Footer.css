@@ -35,7 +35,7 @@ footer .footer-links{
     @apply pb-[0.187rem] border-[1px] border-transparent border-b-black ;
 }
 .links-wrapper input{
-    @apply w-[12.5rem] ;
+    @apply w-[12.5rem] focus:outline-none ;
 }
 .links-wrapper .subscribe{
     @apply ml-[0.69rem] ;
