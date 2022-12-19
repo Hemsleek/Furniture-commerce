@@ -1,6 +1,7 @@
 import React from "react";
 import PageLayout from "./PageLayout";
-import { defaultTable } from "../data";
+import { defaultBlogs, defaultTable } from "../data";
+import BlogCard from "./BlogCard";
 
 import "./Home.css";
 import { Link } from "react-router-dom";
@@ -34,6 +35,18 @@ const Home = () => {
             <span>Asgaard Sofa</span>
             <button>Order Now</button>
           </div>
+        </section>
+        <section className="blog-section">
+          <h3>Our Blogs</h3>
+          <span>
+            Find a bright ideal to suit your taste with our great selection
+          </span>
+          <div className="blogs">
+            {defaultBlogs.map((blog, blogIndex) => (
+              <BlogCard {...blog} key={blogIndex} />
+            ))}
+          </div>
+          <span>View All Post</span>
         </section>
         <section className="follow-section">
           <h3>Our instagram</h3>
