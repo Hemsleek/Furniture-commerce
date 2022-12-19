@@ -11,9 +11,32 @@ footer .footer-content{
     @apply flex items-center gap-[8.5rem] ;
 }
 footer .details{
-    @apply flex flex-col text-base text-[#9F9F9F] ;
+    @apply flex flex-col text-base text-myGrey ;
 }
 
 footer .footer-links{
-    @apply max-w-[8.5rem] ;
+    @apply max-w-[44.375rem]  flex flex-col gap-[3.43rem];
+}
+
+.footer-links .footer-info{
+    @apply flex items-center gap-[10.94rem] text-myGrey font-medium text-base;
+}
+
+.footer-links .links-wrapper{
+    @apply  flex items-start text-black ;
+}
+.links-wrapper .links{
+    @apply flex flex-col gap-[2.875rem];
+}
+.links-wrapper .middle-links{
+    @apply ml-36 mr-[4.5rem] ;
+}
+.links-wrapper .line{
+    @apply pb-[0.187rem] border-[1px] border-transparent border-b-black ;
+}
+.links-wrapper input{
+    @apply w-[12.5rem] ;
+}
+.links-wrapper .subscribe{
+    @apply ml-[0.69rem] ;
 }

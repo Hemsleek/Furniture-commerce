@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        furnitureYellow: '#FBEBB5'
+        furnitureYellow: '#FBEBB5',
+        myGrey: '#9f9f9f'
       }
     },
   },
