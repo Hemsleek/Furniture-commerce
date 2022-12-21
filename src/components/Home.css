@@ -83,12 +83,23 @@
 .blog-section .blogs{
     @apply flex items-center gap-[1.94rem]  mt-[4.06rem] mb-[4.8rem] font-light ;
 }
-.blog-section h3{
+.blog-section h3,
+.furniture-section h3{
     @apply text-black text-[2.25rem] mb-[0.81rem] ;
 }
-.blog-section > span:first-of-type{
+.blog-section > span:first-of-type,
+.furniture-section>span:first-of-type{
     @apply text-myGrey text-base ;
 }
-.blog-section > span:last-of-type{
+.blog-section > span:last-of-type,
+.furniture-section>span:last-of-type
+{
     @apply border-2 border-transparent border-b-black pb-[1.19rem] text-2xl ;
 } 
+
+.furniture-section{
+    @apply flex flex-col items-center pt-[3.125rem] pb-20 ;
+}
+.furniture-container{
+    @apply flex items-center gap-[1.9rem]  mt-[4.06rem] mb-[4.31rem];
+}

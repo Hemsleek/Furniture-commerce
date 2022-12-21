@@ -1,7 +1,9 @@
 import React from "react";
 import PageLayout from "./PageLayout";
 import { defaultBlogs, defaultTable } from "../data";
+import { defaultFurniture } from "../data/furniture";
 import BlogCard from "./BlogCard";
+import FurnitureCard from "./FurnitureCard";
 
 import "./Home.css";
 import { Link } from "react-router-dom";
@@ -27,6 +29,19 @@ const Home = () => {
               </Link>
             </div>
           ))}
+        </section>
+        <section className="furniture-section">
+          <h3>Top Picks For You</h3>
+          <span>
+            Find a bright ideal to suit your taste with our great selection of
+            suspension, floor and table lights.
+          </span>
+          <div className="furniture-container">
+            {defaultFurniture.map((furniture, fIndex) => (
+              <FurnitureCard {...furniture} key={fIndex} />
+            ))}
+          </div>
+          <span>View More</span>
         </section>
         <section className="asgard">
           <img src="/asgard-sofa.png" alt="asgard-sofa" />
