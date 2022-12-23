@@ -1,0 +1,22 @@
+.PageHeader{
+    @apply flex flex-col items-center pt-[3.8rem] pb-[6.06rem];
+    background-image:url("../assets/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-title{
+    @apply text-black font-medium leading-[4.5rem] text-[3rem]  ;
+}
+.wrapper{
+    @apply flex items-center gap-[0.75rem] text-black ;
+}
+
+.wrapper span:first-of-type{
+    @apply font-medium text-base ;
+
+}
+.wrapper span:last-of-type {
+    @apply font-light text-base;
+
+}
+

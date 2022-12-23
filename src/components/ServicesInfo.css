@@ -1,0 +1,15 @@
+
+.ServicesInfo{
+    @apply flex items-center gap-[3rem] py-24 bg-[#faf4f4] justify-center ;
+}
+
+.service{
+    @apply flex flex-col max-w-[23.5rem] text-black ;
+}
+.service h3{
+    @apply font-medium text-[2rem] leading-[3rem]  ;
+}
+
+.service p {
+    @apply font-normal text-[1.25rem] leading-[1.875rem];
+}

@@ -1,0 +1,17 @@
+.Pagination{
+    @apply flex items-center justify-center gap-[2.375rem] ;
+}
+
+.pages-wrapper{
+    @apply flex items-center gap-[2.375rem]  ;
+}
+.pages-wrapper .page{
+    @apply bg-[#FFF9E6] py-[0.94rem] text-black font-normal text-[1.25rem] w-[3.75rem] rounded-[10px] flex items-center justify-center;
+}
+
+.pages-wrapper .page.active{
+    @apply bg-[#FBEBB5];
+}
+.Pagination button{
+    @apply w-[6.125rem] bg-[#FFF9E6] py-[0.94rem] text-black font-light text-[1.25rem] rounded-[10px]  flex items-center justify-center;
+}
