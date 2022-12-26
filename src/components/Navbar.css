@@ -1,16 +1,31 @@
 .Navbar{
      
-    @apply flex items-center justify-end gap-x-[9.88rem] text-base pr-[6.25rem] py-[2.25rem];
+    @apply flex items-center justify-between lg:justify-end gap-x-[9.88rem] text-base lg:pr-[6.25rem] px-[1rem] lg:px-0 py-[2.25rem];
 }
 .nav-items,
 .nav-icons{
-    @apply flex items-center;
+    @apply hidden lg:flex items-center ;
+}
+
+.mobile-nav-items{
+    @apply absolute top-0 z-50 right-0 lg:hidden flex  flex-col gap-[1rem] bg-[#f4fafa] w-3/4 px-[1rem] uppercase py-4 ;
+}
+.cancel-button {
+    @apply w-[2rem] h-[2rem] self-end;
 }
 
 .nav-items{
     @apply gap-x-[4.68rem]
-    capitalize;
+    capitalize  ;
 }
 .nav-icons {
-    @apply gap-x-[2.81rem]
+    @apply gap-x-[2.81rem];
 }
+
+.Navbar .hamburger{
+    @apply flex items-center lg:hidden gap-[1rem];
+}
+.show-mobile{
+    @apply lg:hidden ;
+}
+
