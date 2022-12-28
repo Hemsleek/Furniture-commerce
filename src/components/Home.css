@@ -3,31 +3,31 @@
 }
 
 .hero{
-    @apply bg-[#FBEBB5] pl-[12.625rem] flex items-center h-[56.25rem] relative; 
+    @apply bg-[#FBEBB5] pl-[1rem] lg:pl-[12.625rem] flex items-center h-[50rem] lg:h-[56.25rem] relative; 
 
 }
 .hero-text-wrapper{
-    @apply flex flex-col z-50 max-w-[27.5rem] ;
+    @apply flex flex-col z-50 w-screen lg:w-auto lg:max-w-[27.5rem] mt-[10rem] lg:mt-0 items-center lg:items-start ;
 }
 .hero-text1{
-    @apply font-medium text-[4rem] leading-[5rem];
+    @apply font-medium text-[2.5rem] lg:text-[4rem] lg:leading-[5rem];
 }
 .hero-text-wrapper  span:last-child{
-    @apply text-black text-[1.5rem] font-medium border-2 border-transparent border-b-black pb-[0.8rem] mt-[1.56rem] self-start ;
+    @apply text-black text-[1.5rem] font-medium border-2 border-transparent border-b-black pb-[0.8rem] mt-[1.56rem] lg:self-start ;
 }
 .hero img{
-    @apply absolute -top-40 right-0 z-10;
+    @apply absolute -top-20    lg:-top-40 right-0 z-10;
 }
 
 .table-section{
-    @apply flex items-center bg-[#f4f4f4] justify-center gap-[1.875rem] pt-[3.18rem] pb-[3.375rem];
+    @apply flex flex-col lg:flex-row items-center bg-[#f4f4f4] justify-center lg:gap-[1.875rem] pt-[3.18rem] pb-[3.375rem];
 }
 
 .table{
-    @apply flex flex-col w-[37.81rem] pl-[6.6rem] text-black   ;
+    @apply flex flex-col lg:w-[37.81rem] lg:pl-[6.6rem] text-black   ;
 }
 .table img{
-    @apply ml-12  ;
+    @apply ml-12 w-[14.37rem] h-[14.37rem] lg:w-auto lg:h-auto ;
 }
 
 .table span:first-of-type{
@@ -89,7 +89,7 @@
 }
 .blog-section > span:first-of-type,
 .furniture-section>span:first-of-type{
-    @apply text-myGrey text-base ;
+    @apply text-myGrey text-base text-center lg:text-start px-4 lg:px-0 ;
 }
 .blog-section > span:last-of-type,
 .furniture-section>span:last-of-type
@@ -101,5 +101,5 @@
     @apply flex flex-col items-center pt-[3.125rem] pb-20 ;
 }
 .furniture-container{
-    @apply flex items-center gap-[1.9rem]  mt-[4.06rem] mb-[4.31rem];
+    @apply grid grid-cols-1 lg:grid-cols-none lg:flex items-center gap-[1.9rem]  mt-[4.06rem] mb-[4.31rem];
 }

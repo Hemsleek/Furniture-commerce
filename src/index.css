@@ -20,6 +20,12 @@ body{
 :root{
   font-size: 16px;
 }
+@media (max-width:768px){
+  :root{
+font-size: 12px;
+  }
+  
+}
 
 .text-medium24{
    font-weight: 500;
